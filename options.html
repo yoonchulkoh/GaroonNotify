@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>My Test Extension Options</title>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+</head>
+
+<body>
+<h3>下記オプション項目を入力してください。</h3>
+
+<h4>GaroonのトップページURLを入力してください。</h4>
+Garoon URL:
+<input type="text" size="50" id="url">
+<br/>
+
+<h4>監視するアイコンを選択してください。</h4>
+<table>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="msg20_u.gif" checked></td>
+        <td><img src="image/msg20_u.gif"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="msg20_u_clip8.gif" checked></td>
+        <td><img src="image/msg20_u_clip8.gif"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="bulletin20_u.gif" checked></td>
+        <td><img src="image/bulletin20_u.gif"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="bulletin20_u_clip8.gif" checked></td>
+        <td><img src="image/bulletin20_u_clip8.gif"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="bulletin_clip30x20_u.gif" checked></td>
+        <td><img src="image/bulletin_clip30x20_u.gif"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="event20.gif" checked></td>
+        <td><img src="image/event20.gif"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="report20_u.gif" checked></td>
+        <td><img src="image/report20_u.gif"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="guard_target" value="telmemo20_u.gif" checked></td>
+        <td><img src="image/telmemo20_u.gif"></td>
+    </tr>
+</table>
+<br/>
+<h4>アラート間隔を指定してください。</h4>
+<input type="text" id="interval"/>秒
+<br/>
+<h4>アラートを表示する時間を設定してください。</h4>
+<input type="text" id="displayTime"/>秒
+<br/>
+<button id="save">Save</button>
+<div id="status">
+</body>
+</html>

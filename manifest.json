@@ -1,0 +1,17 @@
+{
+    "name": "Garoon Notify",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "page": "background.html"
+    },
+    "description": "The first extension that I made.",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "https://*/*",
+        "notifications"
+    ]
+}
