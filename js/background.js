@@ -1,8 +1,4 @@
 // 初期化
-localStorage["garoon_url"] = "";
-localStorage["guards"] = "msg20_u.gif,msg20_u_clip8.gif,bulletin20_u.gif,bulletin20_u_clip8.gif,bulletin_clip30x20_u.gif,event20.gif,report20_u.gif,telmemo20_u.gif";
-localStorage["interval"] = "180";
-localStorage["displayTime"] = "20";
 
 var item = [];
 var notification;
@@ -13,7 +9,16 @@ var timer;
 
 $ = jQuery.noConflict();
 $(function () {
-    notifyStart();
+    var isfirstTime = !localStorage["isNotFirstTime"];
+    if (isfirstTime) {
+        localStorage["garoon_url"] = "";
+        localStorage["guards"] = "msg20_u.gif,msg20_u_clip8.gif,bulletin20_u.gif,bulletin20_u_clip8.gif,bulletin_clip30x20_u.gif,event20.gif,report20_u.gif,telmemo20_u.gif";
+        localStorage["interval"] = "180";
+        localStorage["displayTime"] = "20";
+        chrome.tabs.create({url: "options.html"});
+        localStorage["isNotFirstTime"] = false;
+    }
+//    notifyStart();
 });
 
 function notifyStart() {
