@@ -18,7 +18,7 @@ $(function () {
         chrome.tabs.create({url: "options.html"});
         localStorage["isNotFirstTime"] = false;
     }
-//    notifyStart();
+   notifyStart();
 });
 
 function notifyStart() {
